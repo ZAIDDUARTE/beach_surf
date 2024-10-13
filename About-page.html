@@ -1,0 +1,351 @@
+<html>
+<head>
+  <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.cdnfonts.com/css/dimbo" rel="stylesheet">
+                
+  <style>
+      body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Dimbo', sans-serif;
+      background-image: url('https://uncleerniesbayfrontgrill.com/wp-content/uploads/2020/10/shiplap-repeating-white-500.jpg');
+      
+    }
+
+    .navbar {
+      background: transparent !important;
+      padding-top: 0 !important;
+      margin: 0 !important;
+      position: absolute;
+      width: 100%;
+      z-index: 10;
+      
+    }
+
+    .navbar-nav .nav-link {
+      color: white;
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin: 0 15px;
+      
+    }
+
+    .navbar-brand img {
+      height: 80px;
+    }
+
+    .background-image {
+      background-image: url('https://uncleerniesbayfrontgrill.com/wp-content/uploads/2020/10/susnet-website-header.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      width: 100%;
+      position: relative;
+    }
+
+    /* Black overlay */
+    .background-image::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+      z-index: 1;
+    }
+
+    .about-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 48px;
+      font-weight: bold;
+      z-index: 2;
+    }
+
+    .border-bottom {
+      border-bottom: 10px solid #d2b48c;
+      background-color: transparent;
+      z-index: 3;
+      position: relative;
+    }
+    .content {
+      background-color: white;
+      padding: 20px;
+      margin: 20px auto;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      max-width: 800px;
+    }
+
+    .section-title {
+      color: #f15a24;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .section-content {
+      margin-top: 10px;
+      font-size: 16px;
+      line-height: 1.6;
+      font-family: Roboto,sans-serif;
+    }
+
+    .image-container img {
+      width: 100%; /* Ensures images are responsive */
+      max-width: 300px; /* Sets all images to a consistent size */
+      height: auto;
+      border-radius: 8px;
+    }
+
+    #footer {
+      background-image: url('https://uncleerniesbayfrontgrill.com/wp-content/uploads/2020/10/Dark-old-Wood-Background.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      color: white;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      
+    }
+
+    #container-fluid {
+      margin-top: 100px;
+    }
+
+    .logo img {
+      max-width: 200px;
+      height: auto;
+    }
+
+    .social-icons a {
+      color: white;
+      font-size: 24px;
+      margin: 0 10px;
+    }
+
+    .contact-info {
+      margin-top: 20px;
+    }
+
+    .contact-info p {
+      margin: 5px 0;
+    }
+
+    .contact-info a {
+      color: #ff0000;
+      text-decoration: none;
+    }
+
+    .accessibility-icon {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      font-size: 40px;
+      color: #ff6600;
+    }
+
+    .background-image {
+      background-image: url('https://uncleerniesbayfrontgrill.com/wp-content/uploads/2020/10/susnet-website-header.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      width: 100%;
+      position: relative;
+    }
+
+    .about-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 48px;
+      font-weight: bold;
+    }
+
+    .border-bottom {
+      border-bottom: 10px solid #d2b48c;
+      background-color: transparent;
+    }
+
+
+
+    .content {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  .section .text-container {
+    flex: 1;
+    padding-right: 20px;
+  }
+
+  .section .image-container {
+    flex: 1;
+  }
+
+  .section img {
+    width: 100%;
+    max-width: 400px; /* Control image size */
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .section-title {
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-family: 'Dimbo', sans-serif;
+  }
+
+  .section-content {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  @media screen and (max-width: 768px) {
+    .section {
+      flex-direction: column;
+    }
+
+    .section .image-container,
+    .section .text-container {
+      padding: 0;
+    }
+
+    .section img {
+      max-width: 100%;
+      margin-top: 20px;
+    }
+  }
+
+
+
+
+
+  
+  </style>
+</head>
+<body>
+ <!-- Transparent Navbar with no top margin/padding -->
+<nav class="navbar navbar-expand-lg navbar-light sticky-top" id="navbar">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">MENU</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">DRINKS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">LIVE CAM</a>
+          </li>
+          <li class="nav-item">
+            <a class="navbar-brand" href="#">
+              <img alt="Uncle Ernie's Bayfront Bar & Grill logo" src="https://uncleerniesbayfrontgrill.com/wp-content/uploads/2020/10/Uncle-Ernies-LOGO-narrow-3.png"/>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">LIVE MUSIC</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav>
+
+  <!-- Background image section with black overlay -->
+  <div class="background-image">
+    <div class="about-text">ABOUT</div>
+  </div>
+
+
+
+
+
+  
+  <div class="content">
+    <!-- First Section -->
+    <div class="section">
+      <div class="text-container">
+        <div class="section-title">THE UNCLE ERNIE'S EXPERIENCE</div>
+        <div class="section-content">
+          Uncle Ernie's Bayfront Grill and Brew House, located in Historic St. Andrews, offers more than just fantastic food, excellent service, and an incredible view. Dining with us, you experience doses of history the moment you walk through our doors. Along with the friendly service, this place has become a top local's favorite and a must-see while you enjoy our award-winning food in the best relaxing atmosphere.
+        </div>
+      </div>
+      <div class="image-container">
+        <img alt="View of Uncle Ernie's Bayfront Grill and Brew House from the dock" src="https://storage.googleapis.com/a1aa/image/i3nMzzy2oxLmPVO8om84kh6vzogUVE7WxI0CsGbH8ruPyn5E.jpg"/>
+      </div>
+    </div>
+  
+    <!-- Second Section -->
+    <div class="section">
+      <div class="text-container">
+        <div class="section-title">A RICH HISTORY IN ST. ANDREWS</div>
+        <div class="section-content">
+          Uncle Ernie's is the home of Ernest (Uncle Ernie) and Jessie Morris. The original house was built in the late 1800s, making it one of St. Andrews's oldest. Uncle Ernie was born May 19, 1893, in Point Washington, Florida. In 1910, he moved to St. Andrews, where he had four children with his first wife, Jessie. In 1923, he married Donald and Jessie Morris's niece Eunice Tunnell and had three more children. Uncle Ernie was a commercial fisherman, and the landmark building that is now Uncle Ernie's was home to many of his friends and family. Jim's wife, Doris, is remembered for her homemade biscuits and gravy. Uncle Ernie remained active in the community and lived in this home, for 23 years. We are honored and proud to keep this historic restaurant alive to share and honor Uncle Ernie's and Eunice's memories.
+        </div>
+      </div>
+      <div class="image-container">
+        <img alt="Historical plaque at Uncle Ernie's Bayfront Grill and Brew House" src="https://storage.googleapis.com/a1aa/image/a9aeezGbujoHA0tfp0B2VqNhqE5Z9BTlwLyxZRKsMOJej8ZOB.jpg"/>
+      </div>
+    </div>
+  
+    <!-- Third Section -->
+    <div class="section">
+      <div class="text-container">
+        <div class="section-title">OUR CREW ON DECK</div>
+        <div class="section-content">
+          The crew at Uncle Ernie's is always looking forward to serving you, whether you prefer to dine inside or out on our beautiful dock, enjoying the sunset over St. Andrews Bay. Our team loves to meet new friends, and we aspire to do whatever they can to ensure you have an unforgettable dining experience in Panama City, Florida.
+        </div>
+      </div>
+      <div class="image-container">
+        <img alt="View of Uncle Ernie's Bayfront Grill and Brew House crew" src="https://storage.googleapis.com/a1aa/image/i3nMzzy2oxLmPVO8om84kh6vzogUVE7WxI0CsGbH8ruPyn5E.jpg"/>
+      </div>
+    </div>
+  </div>
+  
+
+  <div id="footer" class="container-fluid py-5">
+    <div id="container-fluid " class="logo">
+      <img  alt="Uncle Ernie's Bayfront Bar &amp; Grill Logo" src="https://storage.googleapis.com/a1aa/image/bqf2Oeq22xr4CUM90L8XpmUOPIIMq9H52QlsPUzzuupYKfMnA.jpg"/>
+    </div>
+    <div class="social-icons">
+      <p>Connect With Us</p>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+    <div class="contact-info">
+      <p>Contact Us</p>
+      <p>Address: 1151 Bayview Ave, Panama City, FL 32401</p>
+      <p>Email: <a href="mailto:info@uncleerniesbayfrontgrill.com">info@uncleerniesbayfrontgrill.com</a></p>
+      <p>Phone: (850) 784-0025</p>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qY6srQj55W1eSg/5Bgj0aU+F4FfSxNtbD1uI0CQCtDPLGfn9MFDOzZ+6H80OnqQf" crossorigin="anonymous"></script>
+</body>
+</html>
